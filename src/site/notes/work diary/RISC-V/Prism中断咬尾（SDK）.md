@@ -25,7 +25,8 @@ GD32VF103 SDK （源代码）
 
 # 修改SDK以支持中断咬尾
 ## crt0.S
-目前不必修改
+1.关闭全局使能
+2.调用函数--call init（在handler.c）
 
 ## handler.c
 1.将原来的trap handler（trap指的是狭义异常与中断），拆分为异常 handler和中断handler。
@@ -36,3 +37,13 @@ GD32VF103 SDK （源代码）
 1.上下文入栈/出栈函数，没有修改。
 2.异常handler：没有修改，注意call异常的公共入口即可。
 3.中断handler：入栈、特殊指令、出栈。
+
+## main.c
+1.中断初始化：使能各中断并设定优先级、设定优先级阈值。
+2.编写中断服务函数，函数名称要和向量表中的名称一致。
+
+## 启用中断咬尾
+
+如下图所示，在开启中断使能之后向mtvt2寄存器的最低位写入1，即可开启中断咬尾功能。
+![Pasted image 20240106131603.png](/img/user/work%20diary/imgs/Pasted%20image%2020240106131603.png)
+编写对应中断服务函数时只需要注意函数名即可，须命名为handle_m_ext_interrupt_1/ handle_m_ext_interrupt_2/ handle_m_ext_interrupt_3/ handle_m_ext_interrupt_4，与目前启用的四个中断对应。
