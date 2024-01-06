@@ -27,13 +27,13 @@ Bumblebee内核指令架构手册（文档）
 将原来的trap_entry_en信号（广义异常，包含狭义异常和中断），拆分为狭义异常和中断两个信号。
 
 ## IF模块
-根据狭义异常/中断跳入不同的地址，即mtvec和mtvt2这两个CSR寄存器中保存的内容。
+根据mtvt2寄存器最低位决定根据狭义异常/中断跳入不同的地址，即mtvec和mtvt2这两个CSR寄存器中保存的内容。
 
 ## ID模块
 csrrw ra, CSR_JALMNXTI, ra指令编码：
-csr    rs1    固定值    rd    固定值
-0x7ed    ra    001    ra    1110011
-0x7ed    00001    001    00001    1110011
+csr        rs1        固定值    rd        固定值
+0x7ed    ra          001       ra        1110011
+0x7ed    00001    001       00001   1110011
 即0x7ed090f3
 当指令为0x7ed090f3时，译码模块给出信号dec_jalmntxi，跳转地址计算中的立即数2变为0。
 将dec_jalmntxi信号加入跳转指令译码总线。
@@ -49,5 +49,5 @@ csr    rs1    固定值    rd    固定值
 ![Pasted image 20231213151335.png](/img/user/work%20diary/imgs/Pasted%20image%2020231213151335.png)
 
 ## 备忘
-1.在进入公共中断入口后，pending就会被清楚吗？还是要软件清除？
-2.jalmntxi寄存器保存id阶段的pc，所以特殊指令在ex模块时访问到的就是特殊指令的pc（延迟了一个时钟），前提是csrrw指令读操作数是在ex阶段进行的，问题在于真的是这样吗？
+1.在进入公共中断入口后，pending就会被清除吗？还是要软件清除？
+2.jalmntxi寄存器保存id阶段的pc，所以特殊指令在ex模块时访问到的就是特殊指令的pc（延迟了一个时钟，前提是csrrw指令读操作数是在ex阶段进行的，问题在于真的是这样吗？
