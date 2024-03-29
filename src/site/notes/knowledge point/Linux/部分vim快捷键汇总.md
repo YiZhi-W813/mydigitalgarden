@@ -1,5 +1,5 @@
 ---
-{"tags":["Linux"],"dg-publish":true,"permalink":"/knowledge point/Linux/部分vim快捷键汇总/","dgPassFrontmatter":true}
+{"tags":["Linux","tools"],"dg-publish":true,"permalink":"/knowledge point/Linux/部分vim快捷键汇总/","dgPassFrontmatter":true}
 ---
 
 移动光标：`h (left)       j (down)       k (up)       l (right)
