@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge point/Linux/Bugs/Ubuntu22.04频繁掉无线网卡驱动/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["Linux"],"permalink":"/knowledge point/Linux/Bugs/Ubuntu22.04频繁掉无线网卡驱动/","dgPassFrontmatter":true}
 ---
 
 系统环境：Win11+Ubuntu22.04双系统
