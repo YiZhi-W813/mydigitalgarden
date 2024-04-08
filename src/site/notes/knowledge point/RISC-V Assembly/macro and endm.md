@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge point/RISC-V Assembly/macro and endm/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["C_assembly"],"permalink":"/knowledge point/RISC-V Assembly/macro and endm/","dgPassFrontmatter":true}
 ---
 
 
