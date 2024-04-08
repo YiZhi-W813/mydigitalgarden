@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"‌‌‌　　tags":["tool"],"permalink":"/Literature Notes/Towards Developing High Performance RISC-V Processors Using Agile Methodology/","dgPassFrontmatter":true}
+{"dg-publish":true,"permalink":"/Literature Notes/Towards Developing High Performance RISC-V Processors Using Agile Methodology/","dgPassFrontmatter":true}
 ---
 
 ## 作者
