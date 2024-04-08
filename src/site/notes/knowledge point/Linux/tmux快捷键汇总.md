@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"‌‌‌　　tags":["tools","linux"],"permalink":"/knowledge point/Linux/tmux快捷键汇总/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["tools","Linux"],"permalink":"/knowledge point/Linux/tmux快捷键汇总/","dgPassFrontmatter":true}
 ---
 
 
