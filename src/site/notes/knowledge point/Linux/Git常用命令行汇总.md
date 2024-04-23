@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge point/Linux/Git常用命令行汇总/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["tools"],"permalink":"/knowledge point/Linux/Git常用命令行汇总/","dgPassFrontmatter":true}
 ---
 
 ### 基础
