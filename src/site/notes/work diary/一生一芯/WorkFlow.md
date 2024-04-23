@@ -2,7 +2,6 @@
 {"dg-publish":true,"tags":["tools"],"permalink":"/work diary/一生一芯/WorkFlow/","dgPassFrontmatter":true}
 ---
 
-
 ### verilator
 1.编辑源文件
 2.编译源文件，例如
