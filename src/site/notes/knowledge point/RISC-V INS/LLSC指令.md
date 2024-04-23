@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/knowledge point/RISC-V INS/LLSC指令/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["risc-v"],"permalink":"/knowledge point/RISC-V INS/LLSC指令/","dgPassFrontmatter":true}
 ---
 
 # 参考资料📕
