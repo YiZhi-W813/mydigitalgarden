@@ -1,5 +1,5 @@
 ---
-{"tags":["Linux"],"dg-publish":true,"permalink":"/knowledge point/Linux/apt解决依赖版本冲突/","dgPassFrontmatter":true}
+{"tags":["Linux","tools"],"dg-publish":true,"permalink":"/knowledge point/Linux/apt解决依赖版本冲突/","dgPassFrontmatter":true}
 ---
 
 在 Unbuntu 系统上安装各种软件时，经常会遇到各种各样的依赖问题而导致安装无法进行。我作为一枚 Linux 小白正深受其苦，经常越弄越乱导致不得不重装系统（哭）。通常来说，这类问题可以通过 `更换下载源`、`apt-get update` 和 `apt-get upgrade` 来解决。但更经常会遇到连这三幻神（雾）都没法解决问题的时候。
