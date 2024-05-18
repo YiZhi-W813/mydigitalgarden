@@ -6,7 +6,7 @@
 * https://mp.weixin.qq.com/s/YdRdWcXDC5HTIG0OTOpHzQ
 * https://twitter.com/MajmudarAdam/status/1783304260303855774
 * https://github.com/adam-maj/tiny-gpu?tab=readme-ov-file#kernels
-
+* https://mp.weixin.qq.com/s/gDWQGs4MyVWqsmONdEqvpQ
 ### 概述
 一位工程师在Twitter上分享了自己DIY GPU的全流程。
 “如果您想了解 CPU 从架构到控制信号的整个工作原理，网络上有许多资源可供参考，而GPU却与之不同，由于 GPU 市场竞争如此激烈，所有现代架构的底层技术细节仍然是专有的。虽然有很多资源可以学习 GPU 编程，但几乎没有任何资源可以学习 GPU 在硬件级别的工作原理。
