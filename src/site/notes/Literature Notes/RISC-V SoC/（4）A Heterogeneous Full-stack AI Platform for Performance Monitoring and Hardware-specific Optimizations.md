@@ -15,7 +15,7 @@ DNN的硬件加速器主要分为两类，首先是特定算法的加速器（Al
 * TVM是一个端到端优化堆栈，它公开了图形级和操作符级优化，为不同硬件后端的深度学习工作负载提供性能可移植性。
 * NVDLA是一款由NVIDIA发布的开源的神经网络加速器，是一款由编译器、runtime、firmware和加速器组成的全栈加速器。
 ![QQ_1721699605964.png](/img/user/Literature%20Notes/imgs/QQ_1721699605964.png)
-如图所示，NVDLA主要包含CC(Convolution Core),SDP(Single Point Data Processor)和PDP(Planar Data Processor)
+如图所示是NVDLA的计算单元，计算单元主要包含CC(Convolution Core),SDP(Single Point Data Processor)和PDP(Planar Data Processor)
 作者的平台如下图所示：
 ![QQ_1721700594242.png](/img/user/Literature%20Notes/imgs/QQ_1721700594242.png)
 更详细的硬件信息：
@@ -28,3 +28,8 @@ DNN的硬件加速器主要分为两类，首先是特定算法的加速器（Al
 * Computation density：total network operations (FLOPs) / computation time(s)。该指标准确反映了网络在特定硬件上的适应性。对于两个参数数量大致相同的网络，根据其结构，硬件上会发生额外的内存访问操作，导致性能下降。
 * DLA的内存访问时间和带宽
 * 每个单元的运行时间。该指标反映了网络的计算资源消耗情况，根据该指标可以判断网络的性能瓶颈，从网络角度可以进一步优化网络超参数，提高性能;从硬件的角度来看，应该为长时间运行的部分设计更多的计算资源，下面的实验部分，我们统计了CC的运行时间，SDP和PDP。
+作者的实验设计为：
+* 搭建两个简单的卷积网络，分别采用不同的“Activation→Maxpooling”顺序来执行MNIST分类任务。然后在评估平台上运行这两个模型，使用性能监视器来获取这两个网络的性能指标。
+* 构建两个具有相似计算和参数的网络，改变网络的宽度和深度。
+* 在平台上运行YOLOv3-tiny和Resnet50对比网络中不可加速算子的运算时间占总运算时间的比值。
+作者通过这套评估平台以及上述实验，以MNIST、Yolov3-tiny、Resnet-50等经典网络，验证了DNN的运算顺序、深度和宽度，DNN中包含的算子类型数量，以及不支持的算子数量都会影响性能。
