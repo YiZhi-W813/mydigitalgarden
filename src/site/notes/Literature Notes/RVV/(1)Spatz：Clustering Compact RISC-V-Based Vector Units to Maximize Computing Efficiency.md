@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"tags":["文献阅读","risc-v"],"permalink":"/Literature Notes/RVV/(1)Spatz：Clustering Compact RISC-V-Based Vector Units to Maximize Computing Efficiency/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["文献阅读","risc-v","向量处理器"],"permalink":"/Literature Notes/RVV/(1)Spatz：Clustering Compact RISC-V-Based Vector Units to Maximize Computing Efficiency/","dgPassFrontmatter":true}
 ---
 
 这篇文章更多地在写使用由Spartz+Snitch构成的CC搭建计算集群的事情。只读了有关Spatz的相关部分。
