@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"tags":["文献阅读","risc-v"],"permalink":"/Literature Notes/RVV/(1)Spatz：A Compact Vector Processing Unit for High-Performance and Energy-Efficient Shared-L1 Clusters/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["文献阅读","risc-v","向量处理器"],"permalink":"/Literature Notes/RVV/(1)Spatz：A Compact Vector Processing Unit for High-Performance and Energy-Efficient Shared-L1 Clusters/","dgPassFrontmatter":true}
 ---
 
 ### 工作
