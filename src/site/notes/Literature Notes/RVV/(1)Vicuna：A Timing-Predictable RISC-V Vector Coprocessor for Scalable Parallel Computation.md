@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"tags":["文献阅读","risc-v"],"permalink":"/Literature Notes/RVV/(1)Vicuna：A Timing-Predictable RISC-V Vector Coprocessor for Scalable Parallel Computation/","dgPassFrontmatter":true}
+{"dg-publish":true,"tags":["文献阅读","risc-v","向量处理器"],"permalink":"/Literature Notes/RVV/(1)Vicuna：A Timing-Predictable RISC-V Vector Coprocessor for Scalable Parallel Computation/","dgPassFrontmatter":true}
 ---
 
 
@@ -20,7 +20,7 @@ Vicuna包含一个矢量指令译码器，该解码器解析并确认有效的�
 
 Vicuna由几个专门的functional units组成，每个functional unit负责执行RISC-V矢量指令的一个子集，从而允许同时执行多条指令。执行单元不会一次处理整个向量寄存器。相反，在每个时钟周期中，只处理矢量寄存器的一部分，包含被并行处理的几个元素。大多数array processors和一些vector processors被组织在lane中。每个通道复制一次处理一个矢量元素所需的计算资源。在这样的系统中，lane的数量决定了可以并行处理的元素的数量，而不考虑操作的类型。
 
-相比之下，Vicuna为不同的指令类型使用专用的执行单元，每个指令类型一次处理多个元素。为通过增加每个单元的数据路径宽度，可以为每个单元单独配置吞吐量，从而提高频繁使用的操作的性能。
+相比之下，Vicuna为不同的指令类型使用专用的执行单元，每个指令类型一次处理多个元素。通过增加每个单元的数据路径宽度，可以为每个单元单独配置吞吐量，从而提高频繁使用的操作的性能。
 
 * A Vector Load and Store Unit (VLSU) interfaces the memory and implements the vector memory access instructions.
 * The Vector Arithmetic and Logical Unit (VALU) executes most of the arithmetic and logical vector instructions.
