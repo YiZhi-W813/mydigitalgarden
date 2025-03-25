@@ -6,7 +6,7 @@
 发表在：The 2022 IEEE Asia Pacific Conference on Circuits and Systems_2022
 
 ### 简介
-提出了一种简洁高效的矢量化 [[knowledge point/Math and Algorithm/数论变换（number-theoretic transform, NTT）\|数论变换（number-theoretic transform, NTT）]] 算法，在此基础上我们设计了一个可配置的矢量 NTT 单元来执行 NTT 和其他算术运算。
+提出了一种简洁高效的矢量化 [[Knowledge point/Math and Algorithm/数论变换（number-theoretic transform, NTT）\|数论变换（number-theoretic transform, NTT）]] 算法，在此基础上我们设计了一个可配置的矢量 NTT 单元来执行 NTT 和其他算术运算。
 
 ### 工作
 The contributions of this paper are summarized as follows:
