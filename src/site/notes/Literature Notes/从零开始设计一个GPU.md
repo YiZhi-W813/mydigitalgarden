@@ -17,8 +17,8 @@
 ### 设计步骤
 #### 步骤 1 ：学习 GPU 架构的基础知识
 作者主要提到了以下基础知识：
-- 全局内存（Global Memory）：存储数据和访问它的程序的外部内存是 GPU 编程的巨大瓶颈和限制，[[knowledge point/GPU体系结构/全局内存\|全局内存]]。
-- 计算单元（Streaming Multiprocessor，SM）：在不同线程中并行执行内核代码的主要计算单元，[[knowledge point/GPU体系结构/计算单元（SM）\|计算单元（SM）]]。
+- 全局内存（Global Memory）：存储数据和访问它的程序的外部内存是 GPU 编程的巨大瓶颈和限制，[[Knowledge point/GPU体系结构/全局内存\|全局内存]]。
+- 计算单元（Streaming Multiprocessor，SM）：在不同线程中并行执行内核代码的主要计算单元，[[Knowledge point/GPU体系结构/计算单元（SM）\|计算单元（SM）]]。
 - 分层缓存：缓存可最大限度地减少全局内存访问。
 - 内存控制器：处理对全局内存的限制请求（不知道是不是翻译的问题，这究竟是个什么东西？）。
 - 调度程序：GPU的主要控制单元，将线程分配给可用资源执行。
